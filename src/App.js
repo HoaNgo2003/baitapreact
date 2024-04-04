@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-
+ 
+import {  Route, Router } from 'react-router-dom';
+import AppLayout from './AppLayout/AppLayout';
+ 
+export const BlogPosts = {
+  'first-blog-post' :{
+    title: 'First Blog Post',
+    description: 'Lorem ipsum dolor sit amet, consectetur adip.'
+  },
+  'second-blog-post': {
+    title: 'Second Blog Post',
+    description: 'Hello React Router v6'
+    }
+   
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+   
+     <>
+     
+  <AppLayout/>
+     
+     </>
+    
+    
+   );
+  }
 export default App;
+
+ 
